@@ -18,7 +18,6 @@ struct db_list_local
     QString port;
     QString crypt;
 };
-
 class removing_friend : public QWidget
 {
     Q_OBJECT
@@ -27,18 +26,13 @@ public:
     QComboBox *friends_list;
     QPushButton *remove;
     QPushButton *exit;
-
     QVector<struct db_list_local> friends_vector;
-
     QSqlDatabase *db;
     QSqlQuery *query;
-
 public:
     void update_list();
-
 public slots:
     void remove_from_db();
-
 public:
     removing_friend(QWidget *parent = 0);
     ~removing_friend();

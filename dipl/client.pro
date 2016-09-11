@@ -33,7 +33,13 @@ HEADERS  += widget.h \
     change_info.h \
     removing_friend.h
 
-
 #CONFIG += mobility
 #MOBILITY =
 
+#IDI_ICON1               ICON    DISCARDABLE     "./myico.ico"
+win32:RC_ICONS += myico.ico
+win32:RC_FILE = resources.rc
+
+RESOURCES +=
+
+DISTFILES +=
